@@ -1,0 +1,98 @@
+
+
+// 1. Student Class
+class Student {
+    int rollNo = 101;
+    String firstName = "Rahul";
+    String lastName = "Kumar";
+    int age = 20;
+    char grade = 'A';
+    double marks = 88.5;
+    boolean isPass = true;
+
+    void show() {
+        System.out.println("Student: " + firstName + " " + lastName + " | Roll: " + rollNo + " | Age: " + age + " | Grade: " + grade + " | Marks: " + marks + " | Pass: " + isPass);
+    }
+}
+
+//  2. Car Class
+class Car {
+    String brandName = "Tata";
+    String modelName = "Nexon";
+    String carColor = "Black";
+    double price = 12.5; // in lakhs
+    int topSpeed = 180;
+    int gears = 6;
+    boolean isAutomatic = true;
+
+    void show() {
+        System.out.println("Car: " + brandName + " " + modelName + " | Color: " + carColor + " | Price: " + price + "L | Speed: " + topSpeed + " | Gears: " + gears + " | Auto: " + isAutomatic);
+    }
+}
+
+// 3. Laptop Class
+class Laptop {
+    String brandName = "HP";
+    String processor = "i5";
+    int ramGB = 8;
+    int storageGB = 512;
+    double price = 55000.0;
+    double weight = 1.5;
+    boolean isTouchScreen = false;
+
+    void show() {
+        System.out.println("Laptop: " + brandName + " | CPU: " + processor + " | RAM: " + ramGB + "GB | Storage: " + storageGB + "GB | Price: " + price + " | Weight: " + weight + "kg | Touch: " + isTouchScreen);
+    }
+}
+
+// 4. Dog Class
+class Dog {
+    String dogName = "Shiro";
+    String breedName = "Labrador";
+    int ageYears = 3;
+    String furColor = "White";
+    double weightKg = 25.5;
+    int heightCm = 60;
+    boolean isVaccinated = true;
+
+    void show() {
+        System.out.println("Dog: " + dogName + " | Breed: " + breedName + " | Age: " + ageYears + " | Color: " + furColor + " | Weight: " + weightKg + "kg | Height: " + heightCm + "cm | Vaccinated: " + isVaccinated);
+    }
+}
+
+// 5. Product Class
+class Product {
+    int productId = 505;
+    String productName = "Headphones";
+    String category = "Electronics";
+    double price = 1500.0;
+    int quantity = 2;
+    double rating = 4.5;
+    boolean isInStock = true;
+
+    void show() {
+        System.out.println("Product: " + productName + " | ID: " + productId + " | Category: " + category + " | Price: " + price + " | Qty: " + quantity + " | Rating: " + rating + " | In Stock: " + isInStock);
+    }
+}
+
+// Main Class 
+public class Main {
+    public static void main(String[] args) {
+        
+        
+        Student s1 = new Student();
+        s1.show();
+
+        Car c1 = new Car();
+        c1.show();
+
+        Laptop l1 = new Laptop();
+        l1.show();
+
+        Dog d1 = new Dog();
+        d1.show();
+
+        Product p1 = new Product();
+        p1.show();
+    }
+}
