@@ -1,0 +1,22 @@
+public class Authentication {
+    public static void main(String[] args) {
+        
+        String username = "Saima";
+        String password = "123";
+        String role = "Admin"; 
+
+        if (username.equals("Saima") && password.equals("123")) {
+            
+            System.out.println("Login Successful!");
+
+            if (role.equals("Admin")) {
+                System.out.println("Welcome, Boss! You have full access to Inventory.");
+            } else {
+                System.out.println("Welcome, Staff! You have limited access.");
+            }
+
+        } else {
+            System.out.println("Invalid Username or Password. Access Denied!");
+        }
+    }
+}
