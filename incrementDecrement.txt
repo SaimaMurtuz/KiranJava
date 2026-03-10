@@ -1,4 +1,4 @@
-class incrementDecrement(
+class incrementDecrement{
 public static void main(String args[]){
 int i =90;
 i++; //91
@@ -24,4 +24,5 @@ syso(i+j); //92+98=190
 syso(i); // 92
 syso(j); // 98
 }
+
 }
