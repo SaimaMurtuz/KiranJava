@@ -78,6 +78,7 @@ Example:
 class OperationName {
 public static void main (String args[]){
 int choice = 3;
+switch(choice){
 case 1:
 System.out.println("Addition");
 break;
@@ -113,6 +114,7 @@ Example:
 class FruitPrice {
 public static void main (String args[]){
 int choice = 3;
+switch (choice){
 case 1:
 System.out.println("Apple ₹100 ");
 break;
@@ -127,6 +129,9 @@ System.out.println("Orange ₹60");
 break;
 default:
 System.out.println("Enter no between 1 to 4");
+}
+}
+}
 
 ___________________________________________________________
 
@@ -536,3 +541,4 @@ System.out.println("Enter no between 1 to 3");
 }
 }
 }
+
