@@ -1,0 +1,717 @@
+Practise Questions Based on switch case statements : 
+
+
+1. Print Day Name
+
+Write a program to print the day name using a number.
+
+Example
+1 → Monday
+2 → Tuesday
+
+class DaysOfWeek{
+public static void main(String args[]){
+int day = 8;
+switch (day) {
+case 1:
+System.out.println("Monday");
+break;
+case 2: 
+System.out.println("Tuesday");
+break;
+case 3:
+System.out.println("Wednesday");
+break;
+case 4:
+System.out.println("Thursday");
+break;
+case 5:
+System.out.println("Friday");
+break;
+case 6:
+System.out.println("Saturday");
+break;
+case 7:
+System.out.println("Sunday");
+break;
+default :
+System.out.println("Enter no between 1-7");
+}
+}
+}
+________________________________________________________________
+
+
+
+2. Print Month Name
+
+Write a program to print month name based on number (1–12).
+
+Example
+1 → January
+2 → February
+
+class Month{
+public static void main(String args[]){
+int month = 5;
+switch (month) {
+case 1:
+System.out.println("January");
+break;
+case 2: 
+System.out.println("February");
+break;
+case 3:
+System.out.println("March");
+break;
+case 4:
+System.out.println("April");
+break;
+case 5:
+System.out.println("May");
+break;
+case 6:
+System.out.println("June");
+break;
+case 7:
+System.out.println("July");
+break;
+case 8:
+System.out.println("August");
+break;
+case 9:
+System.out.println("September");
+break;
+case 10:
+System.out.println("October");
+break;
+case 11:
+System.out.println("November");
+break;
+case 12:
+System.out.println("December");
+break;
+
+default :
+System.out.println("Enter no between 1-12");
+}
+}
+}
+
+__________________________________________________
+
+3. Simple Calculator
+
+Create a calculator using switch case for operations:
+
+1 → Addition
+2 → Subtraction
+3 → Multiplication
+4 → Division
+
+class SimpleCal{
+public static void main (String args[]){
+int num = 5;
+int a = 56;
+int b = 45;
+switch(num){
+case 1 :
+System.out.println("Addition ="+(a+b));
+break;
+case 2 :
+System.out.println("Subtraction =" +(a-b));
+break;
+case 3 :
+System.out.println("Multiplication =" +(a*b));
+break;
+case 4 :
+System.out.println("Subtraction =" +(a/b));
+break;
+default :
+System.out.println("Enter no between 1-4");
+}
+}
+}
+__________________________________________________
+
+
+4. Vowel or Consonant
+
+Write a program to check whether a character is a vowel or consonant using switch.
+
+Example
+a,e,i,o,u → Vowel
+
+
+class VowelConsnant {
+public static void main (String args[]){
+char ch = 's';
+switch (ch) {
+case 'A':
+case 'I':
+case 'E':
+case 'O':
+case 'U':
+case 'a':
+case 'u':
+case 'e':
+case 'o':
+case 'i':
+System.out.println("It is vowel");
+break;
+default :
+System.out.println("It is consonant");
+}
+}
+}
+
+_____________________________________________
+
+
+
+5. Grade System
+
+Write a program to print grade description.
+
+A → Excellent
+B → Good
+C → Average
+D → Pass
+F → Fail
+
+class Grade{
+public static void main (String args[]){
+char grade = 'a';
+switch(grade) {
+case 'A':
+System.out.println("Excellent");
+break;
+case 'B':
+System.out.println("Good");
+break;
+case 'C':
+System.out.println("Average");
+break;
+case 'D':
+System.out.println("Pass");
+break;
+case 'F':
+System.out.println("Fail");
+break;
+default :
+System.out.println("Enter grade between A to F except E");
+}
+}
+}
+
+______________________________________________________________
+
+
+
+
+
+6. Even or Odd
+
+Write a program to check even or odd using switch case.
+
+Hint: use number % 2
+
+class EvenOdd {
+public static void main (String args[]){
+int num = 8978;
+switch (num % 2){
+case 0: 
+System.out.println("Even");
+break;
+case 1: 
+System.out.println("Odd");
+break;
+default :
+System.out.println("Enter Number Only");
+}
+}
+}
+
+
+________________________________________________________
+
+7. Menu Driven Program
+
+Create a menu like:
+
+1 → Login
+2 → Register
+3 → Profile
+4 → Logout
+
+
+class Menu{
+public static void main (String args[]){
+int num = 4;
+
+switch(num){
+case 1 :
+System.out.println("Login");
+break;
+case 2 :
+System.out.println("Register");
+break;
+case 3 :
+System.out.println("Profile");
+break;
+case 4 :
+System.out.println("Logout");
+break;
+default :
+System.out.println("Enter no between 1-4");
+}
+}
+}
+
+
+________________________________________________________
+
+
+8. Print Week Type
+
+Check if the day is Weekend or Weekday.
+
+Example
+
+1–5 → Weekday
+6–7 → Weekend
+
+class WeekType {
+public static void main (String args[]){
+int num = 5;
+switch (num) {
+case 1 :
+case 2 :
+case 3 :
+case 4 :
+case 5 :
+System.out.println("Weekday");
+break;
+case 6:
+case 7:
+System.out.println("Weekend");
+break;
+default :
+System.out.println("Enter No between 1-7");
+}
+}
+}
+
+
+________________________________________
+
+
+
+
+9. Arithmetic Operator Program
+
+Write a program using switch where operator is:
+
++ - * /
+
+Perform the operation.
+
+
+class Calculator {
+public static void main (String args[]){
+double a = 78;
+double b = 56;
+char operator = '/';
+switch (operator){
+case '+':
+System.out.println("Addition =" + (a+b));
+break;
+case '-':
+System.out.println("Subtraction =" +(a-b));
+break;
+case '*': 
+System.out.println("Multiplication =" +(a*b));
+break;
+case '/':
+System.out.println("Division =" +(a/b));
+break;
+default :
+System.out.println("Enter + - * / these operations only");
+}
+}
+}
+
+__________________________________________________________________
+
+
+
+10. Area Calculator
+
+Calculate area using switch.
+
+1 → Circle
+2 → Rectangle
+3 → Square
+
+class Area{
+public static void main (String args[]){
+int choice = 1;
+switch (choice){
+case 1:
+double r = 7.9;
+double circle = 3.14*r*r;
+System.out.println("Area of circle =" +(circle));
+break;
+case 2:
+double length = 56;
+double width = 58.8;
+double rectangle = length*width;
+System.out.println("Area of Rectangle ="+(rectangle));
+break;
+case 3:
+int side = 678;
+int square = side*side;
+System.out.println("Area of Square ="+ (square));
+break;
+default :
+System.out.println("choose between 1 to 3");
+}
+}
+}
+
+________________________________________________________________
+
+
+11. Print Language Name
+
+Input language code and print name.
+
+1 → Java
+2 → Python
+3 → C++
+4 → JavaScript
+
+class LanguageName{
+public static void main (String args[]){
+int choice = 7;
+switch(choice){
+case 1:
+System.out.println("Java");
+break;
+case 2:
+System.out.println("Python");
+break;
+case 3:
+System.out.println("c++");
+break;
+case 4:
+System.out.println("JavaScript");
+break;
+default:
+System.out.println("Choose between 1 to 4");
+}
+}
+}
+
+
+______________________________________________________
+
+
+12. Traffic Signal Program
+
+Print traffic signal message.
+
+Red → Stop
+Yellow → Ready
+Green → Go
+
+class Signal{
+public static void main (String args[]){
+String clr = "Pink";
+switch (clr) {
+case "Red":
+System.out.println("Stop");
+break;
+case "Yellow":
+System.out.println("Ready");
+break;
+case "Green":
+System.out.println("Go");
+break;
+default  :
+System.out.println("Accident");
+}
+}
+}
+
+
+
+
+________________________________________
+
+13. Print Number in Words
+
+Convert numbers into words.
+
+1 → One
+2 → Two
+3 → Three
+4 → Four
+5 → Five
+
+class Words{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 1:
+System.out.println("One");
+break;
+case 2:
+System.out.println("Two");
+break;
+case 3:
+System.out.println("Three");
+break;
+case 4:
+System.out.println("Four");
+break;
+case 5:
+System.out.println("Five");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 5");
+}
+}
+}
+____________________________________________________
+
+14. Student Department
+
+Print department name.
+
+1 → Computer Science
+2 → Mechanical
+3 → Civil
+4 → Electrical
+
+
+class Department{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 1:
+System.out.println("Computer Science");
+break;
+case 2:
+System.out.println("Mechanical");
+break;
+case 3:
+System.out.println("Civil");
+break;
+case 4:
+System.out.println("Electrical");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+
+
+__________________________________________________________________________________
+
+
+15. Season Finder
+
+Print season based on month number.
+
+Example
+
+12,1,2 → Winter
+3,4,5 → Summer
+6,7,8 → Monsoon
+
+
+class Season{
+public static void main (String args[]){
+int num = 8;
+switch (num) {
+case 1:
+case 2:
+case 12:
+System.out.println("Winter");
+break;
+case 3:
+case 4:
+case 5:
+System.out.println("Summer");
+break;
+case 6:
+case 7:
+case 8:
+System.out.println("Monsoon");
+break;
+default :
+System.out.println("Enter num between 1 to 12");
+}
+}
+}
+
+
+
+_______________________________________________________________________________
+
+16. Mobile Menu
+
+Create a mobile settings menu.
+
+1 → WiFi
+2 → Bluetooth
+3 → Mobile Data
+4 → Airplane Mode
+
+class MobileMenu{
+public static void main (String args[]){
+int num = 4;
+switch (num) {
+case 1:
+System.out.println("WiFi");
+break;
+case 2:
+System.out.println("Bluetooth");
+break;
+case 3:
+System.out.println("Mobile Data");
+break;
+case 4:
+System.out.println("Airplane Mode");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+
+_________________________________________________
+
+
+17. Character Type
+
+Check character type.
+
+A-Z → Uppercase
+a-z → Lowercase
+0-9 → Digit
+
+
+
+_____________________________________________________
+
+
+18. Food Menu Program
+
+Create food menu.
+
+1 → Pizza
+2 → Burger
+3 → Sandwich
+4 → Pasta
+
+
+class FoodMenu{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 1:
+System.out.println("Pizza");
+break;
+case 2:
+System.out.println("Burger");
+break;
+case 3:
+System.out.println("Sandwich");
+break;
+case 4:
+System.out.println("Pasta");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+
+________________________________
+
+19. Print Result Status
+
+Based on marks category.
+
+1 → Pass
+2 → Distinction
+3 → Fail
+
+
+class ResultStatus{
+public static void main (String args[]){
+int category = 3;
+switch (category) {
+case 1:
+System.out.println("Pass");
+break;
+case 2:
+System.out.println("Distinction");
+break;
+case 3:
+System.out.println("Fail");
+break;
+
+default  :
+System.out.println("Enter category between 1 to 4");
+}
+}
+}
+
+___________________________________________________________
+
+
+20. ATM Menu Program
+
+Create ATM options.
+
+1 → Check Balance
+2 → Withdraw
+3 → Deposit
+4 → Exit
+
+class Atm{
+public static void main (String args[]){
+int option = 2;
+switch (option) {
+case 1:
+System.out.println("Check Balance");
+break;
+case 2:
+System.out.println("Withdraw");
+break;
+case 3:
+System.out.println("Deposit");
+break;
+case 4:
+System.out.println("Exit");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+
+
