@@ -1,0 +1,538 @@
+Practise Session : 
+
+based on switch case statement in java : 
+
+1. Check Character Case
+
+Write a Java program using switch case to check whether a character is:
+
+Uppercase
+
+Lowercase
+
+class CharacterCase{
+public static void main(String args[]) {
+class ch = 'A';
+switch(ch) {
+case 'A':
+case 'B':
+case 'C':
+case 'D':
+System.out.println("Uppercase");
+break;
+case 'a':
+case 'b':
+case 'c':
+case 'd':
+System.out.println("Lowercase");
+break;
+default :
+System.out.println("Enter character between a to d only");
+}
+}
+}
+___________________________________________________________
+
+2. Check Weekday or Weekend
+
+Write a Java program using switch case to check whether the day number represents:
+
+Weekday
+
+Weekend
+
+
+class WeekType {
+public static void main (String args[]){
+int num = 5;
+switch (num) {
+case 1 :
+case 2 :
+case 3 :
+case 4 :
+case 5 :
+System.out.println("Weekday");
+break;
+case 6:
+case 7:
+System.out.println("Weekend");
+break;
+default :
+System.out.println("Enter No between 1-7");
+}
+}
+}
+
+_______________________________________________________
+
+3. Check Arithmetic Operation Name
+
+Write a Java program using switch case to print operation name.
+
+Example:
+1 → Addition
+2 → Subtraction
+3 → Multiplication
+4 → Division
+
+class OperationName {
+public static void main (String args[]){
+int choice = 3;
+case 1:
+System.out.println("Addition");
+break;
+case 2:
+System.out.println("Subtraction");
+break;
+case 3:
+System.out.println("Multiplication");
+break;
+case 4:
+System.out.println("Division");
+break;
+default:
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+_________________________________________________________-
+
+
+
+4. Fruit Price Menu
+
+Write a Java program using switch case to display price of fruits.
+
+Example:
+1 → Apple ₹100
+2 → Mango ₹80
+3 → Banana ₹40
+4 → Orange ₹60
+
+class FruitPrice {
+public static void main (String args[]){
+int choice = 3;
+case 1:
+System.out.println("Apple ₹100 ");
+break;
+case 2:
+System.out.println("Mango ₹80");
+break;
+case 3:
+System.out.println("Banana ₹40");
+break;
+case 4:
+System.out.println("Orange ₹60");
+break;
+default:
+System.out.println("Enter no between 1 to 4");
+
+___________________________________________________________
+
+5. Language Selection
+
+Write a Java program using switch case to display greeting message.
+
+Example:
+1 → English → Hello
+2 → Hindi → Namaste
+3 → Marathi → Namaskar
+
+class FruitPrice {
+public static void main (String args[]){
+int lang = 2; 
+switch(lang) {
+case 1:
+System.out.println("Hello");
+break;
+case 2:
+System.out.println("Namaste");
+break;
+case 3:
+System.out.println("Namaskar");
+break;
+default:
+System.out.println("Enter no between 1 to 3");
+}
+}
+}
+
+_______________________________________________
+
+ 
+
+6. Student Result Status
+
+Write a Java program using switch case.
+
+Input: Grade letter
+A → Distinction
+B → First Class
+C → Second Class
+D → Pass
+F → Fail
+
+class ResultStatus{
+public static void main (String args[]){
+char grade = 'A';
+switch (grade) {
+case 'A':
+System.out.println("Distinction");
+break;
+case 'B':
+System.out.println("First Class");
+break;
+case 'C':
+System.out.println("Second Class");
+break;
+case 'D':
+System.out.println("Pass");
+break;
+case 'F':
+System.out.println("Fail");
+break;
+
+default  :
+System.out.println("Enter grade between A to F except E");
+}
+}
+}
+
+
+__________________________________________________________-
+
+7. Season Based on Month
+
+Write a Java program using switch case to print season.
+
+Example:
+Dec–Feb → Winter
+Mar–May → Summer
+Jun–Sep → Monsoon
+Oct–Nov → Autumn
+
+
+class Season{
+public static void main (String args[]){
+int month = 1;
+switch(month) {
+case 12:
+case 1:
+case 2:
+System.out.println("Winter");
+break;
+case 3:
+case 4: 
+case 5:
+System.out.println("Summer");
+break;
+case 6:
+case 7: 
+case 8:
+System.out.println("Monsoon");
+break;
+case 10:
+case 11: 
+System.out.println("Autumn");
+break;
+default :
+System.out.println("Enter no between 1 to 12");
+}
+}
+}
+
+
+________________________________________________________
+
+8. ATM Menu
+
+Write a Java program using switch case.
+
+1 → Check Balance
+2 → Withdraw Money
+3 → Deposit Money
+4 → Exit
+
+
+
+
+class Atm{
+public static void main (String args[]){
+int option = 2;
+switch (option) {
+case 1:
+System.out.println("Check Balance");
+break;
+case 2:
+System.out.println("Withdraw Money");
+break;
+case 3:
+System.out.println("Deposit Money");
+break;
+case 4:
+System.out.println("Exit");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+_____________________________________________________________
+
+9. Simple Food Menu
+
+Write a Java program using switch case.
+
+1 → Pizza
+2 → Burger
+3 → Sandwich
+4 → Pasta
+
+class FoodMenu{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 1:
+System.out.println("Pizza");
+break;
+case 2:
+System.out.println("Burger");
+break;
+case 3:
+System.out.println("Sandwich");
+break;
+case 4:
+System.out.println("Pasta");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+_____________________________________________-
+
+10. Check Digit Name
+
+Write a Java program using switch case to display digit name.
+
+Example:
+0 → Zero
+1 → One
+2 → Two
+9 → Nine
+
+
+class Words{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 0:
+System.out.println("Zero");
+break;
+case 2:
+System.out.println("One");
+break;
+case 9:
+System.out.println("Nine");
+break;
+
+default  :
+System.out.println("Enter these number only 0 1 2 9");
+}
+}
+}
+
+
+11. Area of Shapes
+
+Write a Java program using switch case.
+
+1 → Square
+2 → Circle
+3 → Rectangle
+
+
+class Area{
+public static void main (String args[]){
+int choice = 1;
+switch (choice){
+case 1:
+double r = 7.9;
+double circle = 3.14*r*r;
+System.out.println("Area of circle =" +(circle));
+break;
+case 2:
+double length = 56;
+double width = 58.8;
+double rectangle = length*width;
+System.out.println("Area of Rectangle ="+(rectangle));
+break;
+case 3:
+int side = 678;
+int square = side*side;
+System.out.println("Area of Square ="+ (square));
+break;
+default :
+System.out.println("choose between 1 to 3");
+}
+}
+}
+
+_________________________________________________________
+
+Calculate area based on choice.
+
+12. Check Number Range
+
+Write a Java program using switch case.
+
+Example:
+Input: number / 10
+
+0–3 → Low
+4–7 → Medium
+8–10 → High
+
+class NumRange{
+public static void main(String[] args) {
+int num = 75;
+switch(num/10){
+case 0:
+case 1:
+case 2:
+case 3:
+System.out.println("Low");
+break;
+case 4:
+case 5:
+case 6:
+case 7:
+System.out.println("Medium");
+break;
+case 8:
+case 9:
+case 10:
+System.out.println("High");
+break;
+default :
+System.out.println("Enter number between 0 to 10");
+}
+}
+}
+
+
+______________________________________________________
+
+13. Company Department
+
+Write a Java program using switch case.
+
+1 → HR
+2 → Finance
+3 → IT
+4 → Marketing
+
+
+
+
+class Department{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 1:
+System.out.println("HR");
+break;
+case 2:
+System.out.println("Finance");
+break;
+case 3:
+System.out.println("IT");
+break;
+case 4:
+System.out.println("Marketing");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+__________________________________________________
+
+14. Vehicle Type
+
+Write a Java program using switch case.
+
+1 → Bike
+2 → Car
+3 → Bus
+4 → Truck
+
+
+
+
+class Department{
+public static void main (String args[]){
+int num = 3;
+switch (num) {
+case 1:
+System.out.println("Bike");
+break;
+case 2:
+System.out.println("Car");
+break;
+case 3:
+System.out.println("Bus");
+break;
+case 4:
+System.out.println("Truck");
+break;
+
+default  :
+System.out.println("Enter no between 1 to 4");
+}
+}
+}
+
+
+Print vehicle type.
+
+
+__________________________________________________
+
+15. Check Password Strength Level
+
+Write a Java program using switch case.
+
+Input level number:
+
+1 → Weak Password
+2 → Medium Password
+3 → Strong Password
+
+
+
+class Department{
+public static void main (String args[]){
+int level = 3;
+switch (level) {
+case 1:
+System.out.println("Weak Password");
+break;
+case 2:
+System.out.println("Medium Password");
+break;
+case 3:
+System.out.println("Strong Password");
+break;
+default  :
+System.out.println("Enter no between 1 to 3");
+}
+}
+}
