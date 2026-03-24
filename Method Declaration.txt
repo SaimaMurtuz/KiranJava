@@ -1,0 +1,260 @@
+1. Fibonacci series  
+
+
+class FibonacciSeries{
+public void fibonacci(){
+int count = 10;
+int a=0;
+int b=1;
+System.out.println("Fibonacci Series :");
+for (int i=1; i<=10; i++){
+int c=a+b;
+System.out.println(a+"");
+ a=b;
+ b=c;
+}
+}
+public static void main(String args[]){
+FibonacciSeries f1 = new FibonacciSeries();
+f1.fibonacci();
+}
+}
+
+_____________________________________________
+
+
+2. even odd series 
+
+
+class EvenOdd{
+
+public void show(){
+int num=89;
+if (num % 2 == 0) {
+System.out.println("Number is even ");
+}
+else {
+System.out.println("Number is odd ");
+}
+}
+public static void main(String args[]){
+EvenOdd s1=new EvenOdd();
+s1.show();
+}
+}
+
+
+3. reverse no 
+
+
+class ReverseNumber{
+public void revers(){
+int num= 75672351;
+int rem;
+int rev=0;
+while (num!=0)
+{
+rem=num%10;
+rev = rev*10+rem;
+num = num/10;
+}
+System.out.println(rev);
+}
+public static void main(String args[]){
+ReverseNumber r1= new ReverseNumber();
+r1.revers();
+}
+}
+
+
+_____________________________________________________-
+
+
+
+4. check palindrome no 
+
+
+class Palindrome{
+public void palindrome(){
+int i = 131;
+int temp = i;
+int rev = 0;
+int rem;
+while (temp!=0){
+rem = temp%10;
+rev=rev*10+rem;
+temp = temp /10;
+}
+if (i==rev)
+{
+System.out.println(i+ "is palindrome");
+}
+else{
+System.out.println(i+ "is not palindrome");
+}
+}
+public static void main(String args[]){
+Palindrome p1= new Palindrome();
+p1.palindrome();
+}
+}
+
+
+_______________________________________________
+
+
+
+5. star pattern 
+
+
+
+class Star{
+public void star(){
+
+for(int i=1; i<=4; i++){
+for (int j=1; j<=i; j++) {
+System.out.print("*");
+}
+System.out.println();
+}
+
+for(int i =5; i>=1; i--){
+for(int j = 1; j<=i; j++) {
+System.out.print("*");
+}
+System.out.println();
+}
+}
+public static void main(String args[]){
+Star s1=new Star();
+s1.star();
+}
+}
+
+
+________________________________________________________
+
+
+6. Prime No
+
+class Prime{
+public int  show(){
+
+int num =7;
+int temp =0;
+for (int i=2; i<=num-1; i++)
+{
+if (num%i==0)
+{
+temp=temp+1;
+}
+}
+if(temp==0){
+System.out.println("Number is prime");
+}
+else{
+System.out.println("Number is not prime");
+}
+return temp;
+}
+public static void main(String args[]){
+Prime p1 = new Prime();
+p1.show();
+}
+}
+
+__________________________________________________
+
+7. Myinfo(15 V)
+
+class MyInfo{
+public int show(){
+String firstName ="Saima";
+String lastName = "Angadgiri";
+String email = "saima@gmail.com";
+String country = "India";
+String favoritColor = "Brown";
+
+int age = 21;
+int graduationYear = 2026;
+int rollNo = 132;
+int ongoingProject =1;
+
+double height = 163.4;
+double gpa = 8.60;
+double dailyStepsGoal = 10000.0;
+
+char gender = 'F';
+char section = 'A';
+
+Boolean isEmployed = false;
+
+System.out.println("Full Name: " + firstName + " " + lastName);
+System.out.println("Contact: " + email);
+System.out.println("Location: " + country);
+System.out.println("Age: " + age + " | Gender: " + gender);
+System.out.println("Academic: Year " + graduationYear + ", GPA: " + gpa + ", Section: " + section);
+System.out.println("Ongoing Project: " + ongoingProject);
+System.out.println("Height: " + height + "cm");
+System.out.println("Daily Steps Goal: " + dailyStepsGoal);
+System.out.println("Employment Status: " + (isEmployed ? "Yes" : "No"));
+
+return 15; 
+}
+public static void main(String args[]) {
+MyInfo s = new MyInfo();
+s.show();
+    
+}
+}
+____________________________________________________________
+
+
+. Write a method to print your name (no return, no parameters).
+Create method to print your name
+Create method to add two numbers
+Create method to check even or odd
+Create method to find square of number
+Create method to return largest of two numbers
+
+
+
+class Method{
+public void printName(){
+System.out.println("My name is Saima");
+}
+public void addNumbers(int a, int b){
+int sum = a+b;
+System.out.println("Sum: "+sum);
+}
+public void checkEvenOdd(int num) {
+if (num % 2== 0) {
+System.out.println(num + "is Even");
+}
+else {
+System.out.println(num + "is Odd");
+}
+}
+public int square(int n){
+return n*n;
+}
+
+public int largest(int x, int y){
+if (x>y) {
+return x;
+}
+else {
+return y;
+}
+}
+public static void main (String args[]){
+Method m1=new Method();
+m1.printName();
+m1.addNumbers(56,98);
+m1.checkEvenOdd(4);
+int square = m1.square(9);
+System.out.println("Square of 9 is:"+ square);
+int largest = m1.largest(78,24);
+System.out.println("Largest numbet is:"+ largest);
+}
+}
